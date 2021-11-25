@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<voto>
+    <associado>
+        <cpf>12345</cpf>
+    </associado>
+    <escolha>SIM</escolha>
+    <pauta>
+        <id>1464268461</id>
+        <nomePauta>PautaTeste_1464268461</nomePauta>
+    </pauta>
+</voto>
