@@ -1,0 +1,35 @@
+logging:
+  level:
+    root: WARN
+    br.com.gustavo: DEBUG
+    io.netty.util.internal: ERROR
+
+management:
+  server:
+    port: 8080
+  security:
+    enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    restart:
+      enabled: true
+    health:
+      show-details: 'ALWAYS'
+  trace:
+    http:
+      enabled: false
+
+spring:
+  application:
+    name: votacao
+  rabbitmq:
+    host: localhost
+    password: admin
+    port: 5672
+    username: admin
+    exchange: amq.direct
+    queue: FILA_LOCAL
+    routingkey: local.routingkey

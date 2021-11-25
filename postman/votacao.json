@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "40249aa1-f837-4a56-ba93-cfc1a74f00d2",
+		"name": "Local",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "cadastraPauta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"123\",\n    \"nomePauta\": \"PautaTeste1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/votacao/cadastraPauta"
+			},
+			"response": []
+		},
+		{
+			"name": "Voto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"1\",\n    \"pauta\": {\n        \"id\": 123,\n        \"nomePauta\": \"PautaTeste1\"\n    },\n    \"associado\": {\n        \"cpf\": \"92234009022\"\n    },\n    \"escolha\": {\n        \"escolha\": \"Sim\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/votacao/votar"
+			},
+			"response": []
+		},
+		{
+			"name": "Abrir Secao",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"123\",\n    \"nomePauta\": \"PautaTeste1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/votacao/abrirSessao"
+			},
+			"response": []
+		},
+		{
+			"name": "VerificaSessao",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"123\",\n    \"nomePauta\": \"PautaTeste1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/votacao/sessaoAberta"
+			},
+			"response": []
+		},
+		{
+			"name": "FecharSessao",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"123\",\n    \"nomePauta\": \"PautaTeste1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/votacao/fecharSessao"
+			},
+			"response": []
+		},
+		{
+			"name": "ComputarVotos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"123\",\n    \"nomePauta\": \"PautaTeste1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/votacao/computarVotos"
+			},
+			"response": []
+		},
+		{
+			"name": "checkCPf",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/users?cpf=92234009022",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					],
+					"query": [
+						{
+							"key": "cpf",
+							"value": "92234009022"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

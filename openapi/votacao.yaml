@@ -1,0 +1,146 @@
+openapi: 3.0.1
+info:
+  title: Votacao
+  version: v0
+servers:
+  - url: http://localhost:8080
+    description: Generated server url
+paths:
+  /votacao/votar:
+    post:
+      operationId: cadastraVoto
+      requestBody:
+        content:
+          '*/*':
+            schema:
+              $ref: '#/components/schemas/Voto'
+      responses:
+        '200':
+          description: default response
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/MonoStatusResposta'
+  /users:
+    get:
+      operationId: validaCpf
+      parameters:
+        - name: cpf
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: default response
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/MonoStatusResposta'
+  /votacao/abrirSessao:
+    post:
+      operationId: abrirSessao
+      requestBody:
+        content:
+          '*/*':
+            schema:
+              $ref: '#/components/schemas/Pauta'
+      responses:
+        '200':
+          description: default response
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/MonoStatusResposta'
+  /votacao/computarVotos:
+    post:
+      operationId: computarVotos
+      requestBody:
+        content:
+          '*/*':
+            schema:
+              $ref: '#/components/schemas/Pauta'
+      responses:
+        '200':
+          description: default response
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/MonoResultado'
+  /votacao/sessaoAberta:
+    post:
+      operationId: verificarSessao
+      requestBody:
+        content:
+          '*/*':
+            schema:
+              $ref: '#/components/schemas/Pauta'
+      responses:
+        '200':
+          description: default response
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/MonoStatusResposta'
+  /votacao/cadastraPauta:
+    post:
+      operationId: cadastraPauta
+      requestBody:
+        content:
+          '*/*':
+            schema:
+              $ref: '#/components/schemas/Pauta'
+      responses:
+        '200':
+          description: default response
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/MonoStatusResposta'
+  /votacao/fecharSessao:
+    post:
+      operationId: fecharSessao
+      requestBody:
+        content:
+          '*/*':
+            schema:
+              $ref: '#/components/schemas/Pauta'
+      responses:
+        '200':
+          description: default response
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/MonoStatusResposta'
+components:
+  schemas:
+    Associado:
+      type: object
+      properties:
+        cpf:
+          type: string
+    Pauta:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int32
+        nomePauta:
+          type: string
+    Voto:
+      type: object
+      properties:
+        pauta:
+          $ref: '#/components/schemas/Pauta'
+        associado:
+          $ref: '#/components/schemas/Associado'
+        escolha:
+          type: string
+          enum:
+            - SIM
+            - NAO
+            - INDEFINIDO
+    MonoStatusResposta:
+      type: object
+    MonoResultado:
+      type: object

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="br.com.gustavo.votacao.performance.TestePerformance" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-11-25T01:52:56" hostname="gustavo-Latitude-E5430-non-vPro" time="3.405">
+  <properties/>
+  <testcase name="testePerformance" classname="br.com.gustavo.votacao.performance.TestePerformance" time="3.405"/>
+  <system-out><![CDATA[22:52:48.295 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class br.com.gustavo.votacao.performance.TestePerformance]
+22:52:48.311 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+22:52:48.330 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+22:52:48.425 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [br.com.gustavo.votacao.performance.TestePerformance] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+22:52:48.465 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [br.com.gustavo.votacao.VotacaoApplication]: class path resource [br/com/gustavo/votacao/VotacaoApplication-context.xml] does not exist
+22:52:48.468 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [br.com.gustavo.votacao.VotacaoApplication]: class path resource [br/com/gustavo/votacao/VotacaoApplicationContext.groovy] does not exist
+22:52:48.469 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [br.com.gustavo.votacao.VotacaoApplication]: no resource found for suffixes {-context.xml, Context.groovy}.
+22:52:48.611 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [br.com.gustavo.votacao.performance.TestePerformance]
+22:52:48.897 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [br.com.gustavo.votacao.performance.TestePerformance]: using defaults.
+22:52:48.900 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+22:52:48.932 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@73bd69ca, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7efb69d6, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@452fb38d, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@912028, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@187afac9, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3d6a85c9, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5e1ea32, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@c781ac6, org.springframework.test.context.event.EventPublishingTestExecutionListener@439b0532, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2ab68445, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@200c4b5b, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6c6ecbb6, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7747f19c, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@694dc79d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2b591f7c]
+22:52:48.936 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [br.com.gustavo.votacao.performance.TestePerformance]
+22:52:48.943 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [br.com.gustavo.votacao.performance.TestePerformance]
+22:52:48.946 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [br.com.gustavo.votacao.performance.TestePerformance]
+22:52:48.947 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [br.com.gustavo.votacao.performance.TestePerformance]
+22:52:48.950 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [br.com.gustavo.votacao.performance.TestePerformance]
+22:52:48.951 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [br.com.gustavo.votacao.performance.TestePerformance]
+22:52:48.956 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [br.com.gustavo.votacao.performance.TestePerformance]
+22:52:48.957 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [br.com.gustavo.votacao.performance.TestePerformance]
+22:52:48.958 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [br.com.gustavo.votacao.performance.TestePerformance]
+22:52:48.958 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [br.com.gustavo.votacao.performance.TestePerformance]
+22:52:48.977 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@12a0047c testClass = TestePerformance, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@3187a6d4 testClass = TestePerformance, locations = '{}', classes = '{class br.com.gustavo.votacao.mensagem.RabbitMQSender}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@3b65af2, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6986b1d4, [ImportsContextCustomizer@1da42bcc key = [@org.springframework.boot.test.context.SpringBootTest(args={}, webEnvironment=MOCK, value={}, properties={}, classes={}), @org.springframework.test.context.BootstrapWith(value=org.springframework.boot.test.context.SpringBootTestContextBootstrapper.class), @org.junit.jupiter.api.extension.ExtendWith(value={org.springframework.test.context.junit.jupiter.SpringExtension.class}), @org.springframework.boot.autoconfigure.EnableAutoConfiguration(excludeName={}, exclude={}), @org.springframework.context.annotation.Import(value={org.springframework.boot.autoconfigure.AutoConfigurationImportSelector.class}), @org.springframework.test.context.ContextConfiguration(inheritInitializers=true, loader=org.springframework.test.context.ContextLoader.class, initializers={}, classes={br.com.gustavo.votacao.mensagem.RabbitMQSender.class}, name="", locations={}, value={}, inheritLocations=true), @org.apiguardian.api.API(consumers={"*"}, since="5.0", status=STABLE), @org.springframework.boot.autoconfigure.AutoConfigurationPackage(basePackages={}, basePackageClasses={}), @org.springframework.context.annotation.Import(value={org.springframework.boot.autoconfigure.AutoConfigurationPackages$Registrar.class})]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@310fc6ea, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@4b024ccd, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@750cdba1, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@1e08fe65, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@5d5529f8], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+22:52:48.980 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [br.com.gustavo.votacao.performance.TestePerformance]
+22:52:48.980 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [br.com.gustavo.votacao.performance.TestePerformance]
+22:52:49.038 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.5.6)
+
+2021-11-24 22:52:49.862  INFO 368313 --- [    Test worker] b.c.g.v.performance.TestePerformance     : Starting TestePerformance using Java 11.0.11 on gustavo-Latitude-E5430-non-vPro with PID 368313 (started by gustavo in /home/gustavo/Documentos/workspace/TesteVotacao)
+2021-11-24 22:52:49.865 DEBUG 368313 --- [    Test worker] b.c.g.v.performance.TestePerformance     : Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-11-24 22:52:49.867  INFO 368313 --- [    Test worker] b.c.g.v.performance.TestePerformance     : No active profile set, falling back to default profiles: default
+2021-11-24 22:52:56.036  INFO 368313 --- [    Test worker] b.c.g.v.performance.TestePerformance     : Started TestePerformance in 6.985 seconds (JVM running for 9.14)
+2021-11-24 22:52:56.483 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro da pauta PautaTeste_1422636706
+2021-11-24 22:52:56.765 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:56.766 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:56.798 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:56.798 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:56.823 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:56.823 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:56.861 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:56.864 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:56.897 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:56.898 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:56.919 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:56.920 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:56.946 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:56.947 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:56.969 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:56.970 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:56.990 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:56.992 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.009 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.010 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.042 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.043 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.063 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.065 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.085 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.085 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.103 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.103 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.124 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.125 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.148 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.149 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.174 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.174 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.195 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.196 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.212 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.213 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.228 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.229 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.248 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.248 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.268 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.269 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.284 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.284 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.299 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.300 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.317 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.317 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.333 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.333 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.348 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.349 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.363 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.363 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.377 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.378 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.392 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.392 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.406 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.406 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.420 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.420 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.438 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.438 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.460 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.460 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.474 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.474 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.488 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.489 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.502 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.503 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.517 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.517 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.533 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.533 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.548 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.548 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.580 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.580 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.595 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.595 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.611 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.612 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.628 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.628 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.650 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.650 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.668 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.668 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.685 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.686 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.706 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.706 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.724 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.725 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.742 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.742 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.757 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.757 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.778 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.778 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.796 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.797 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.814 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.815 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.836 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.837 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.857 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.857 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.874 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.874 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.896 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.896 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.910 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.911 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.926 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.927 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.947 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.948 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.962 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.962 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.977 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.977 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:57.992 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:57.992 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:58.006 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:58.007 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:58.020 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:58.021 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:58.035 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:58.035 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:58.050 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:58.050 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:58.065 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:58.065 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:58.082 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:58.083 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:58.098 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:58.099 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:58.113 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:58.113 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:58.127 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:58.127 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:58.143 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:58.144 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:58.159 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:58.159 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:58.174 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:58.174 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:58.188 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:58.188 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:58.203 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:58.204 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:58.218 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:58.219 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:58.237 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:58.237 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:58.258 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:58.258 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:58.279 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:58.279 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:58.296 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:58.296 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:58.325 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:58.326 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:58.346 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:58.346 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:58.363 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:58.364 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:58.379 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:58.380 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:58.397 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:58.397 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:58.410 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:58.410 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:58.425 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:58.425 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:58.446 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:58.447 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:58.467 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:58.468 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:58.490 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:58.490 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:58.507 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:58.507 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:58.522 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:58.523 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:58.541 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:58.542 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:58.562 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:58.563 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:58.585 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:58.585 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:58.604 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:58.605 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:58.624 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:58.625 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:58.645 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:58.646 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:58.665 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:58.666 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:58.680 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:58.680 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:58.693 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:58.693 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:58.706 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:58.706 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:58.720 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:58.721 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:58.734 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:58.734 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta aberta
+2021-11-24 22:52:58.751 DEBUG 368313 --- [    Test worker] b.c.g.votacao.service.VotacaoService     : Iniciando cadastro do voto para a pauta PautaTeste_1422636706
+2021-11-24 22:52:58.752 DEBUG 368313 --- [    Test worker] br.com.gustavo.votacao.util.Utilidades   : Pauta PautaTeste_1422636706 esta fechada
+Systema processou finalizou com status da pauta = StatusResposta(resposta=PAUTA_FECHADA)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
