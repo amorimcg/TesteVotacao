@@ -77,7 +77,7 @@ public class Utilidades {
 
         ZonedDateTime data = session.getSessao().get(pauta.getId());
         Duration duration = Duration.between(data, ZonedDateTime.now());
-        if(duration.getSeconds() < 2) {
+        if(duration.getSeconds() < 60) {
             log.debug("Pauta {} esta aberta", pauta.getNomePauta());
             return Mono.just(StatusResposta.builder().resposta(Resposta.PAUTA_ABERTA).build());
         }
